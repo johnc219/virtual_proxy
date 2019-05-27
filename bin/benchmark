@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "virtual_proxy"
+require "benchmark"
+
+class SimpleProxy
+  def initialize(&block)
+    @block = block
+  end
+
+  def subject
+    @subject ||= @block.call
+  end
+
+  def run
+    subject.run # no method_missing
+  end
+end
+
+class Subject
+  def run
+    1000.times { |i| i % 5 }
+  end
+end
+
+virtual_proxy = VirtualProxy.to { Subject.new }
+simple_proxy  = SimpleProxy.new { Subject.new }
+
+n = 100_000
+
+Benchmark.bm do |x|
+  x.report('virtual_proxy') { n.times { virtual_proxy.run } }
+  x.report('simple_proxy')  { n.times { simple_proxy.run } }
+end
