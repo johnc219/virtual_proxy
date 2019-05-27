@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/johnc219/virtual_proxy.svg?branch=master)](https://travis-ci.org/johnc219/virtual_proxy)
 [![Gem Version](https://badge.fury.io/rb/virtual_proxy.svg)](https://badge.fury.io/rb/virtual_proxy)
 
 # VirtualProxy
@@ -37,7 +38,7 @@ proxy.__getobj__ # => ExpensiveObject instance
 proxy.__setobj__ { OtherExpensiveObject.new }
 proxy.other_expensive_object_method
 
-# Extend any class or object with proxy construction capabilities
+# Extend any class with proxy construction capabilities
 class ExpensiveObject
   extend VirtualProxy
 
