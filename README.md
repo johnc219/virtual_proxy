@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/johnc219/virtual_proxy.svg?branch=master)](https://travis-ci.org/johnc219/virtual_proxy)
 [![Gem Version](https://badge.fury.io/rb/virtual_proxy.svg)](https://badge.fury.io/rb/virtual_proxy)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d49f2a8758d953f478b8/maintainability)](https://codeclimate.com/github/johnc219/virtual_proxy/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d49f2a8758d953f478b8/test_coverage)](https://codeclimate.com/github/johnc219/virtual_proxy/test_coverage)
 
 # VirtualProxy
 
