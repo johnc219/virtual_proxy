@@ -1,4 +1,8 @@
 require "bundler/setup"
+require "simplecov"
+
+SimpleCov.start
+
 require "virtual_proxy"
 
 RSpec.configure do |config|
