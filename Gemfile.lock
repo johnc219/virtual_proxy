@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    virtual_proxy (0.1.0)
+    virtual_proxy (0.2.1)
 
 GEM
   remote: https://rubygems.org/
