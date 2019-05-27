@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/virtual_proxy.svg)](https://badge.fury.io/rb/virtual_proxy)
+
 # VirtualProxy
 
 - Quickly build virtual proxies.
